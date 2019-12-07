@@ -2,7 +2,7 @@
   "name": "personal-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tmuzanenhamo.github.io",
+  "homepage": "https://tmuzanenhamo.github.io/mywebsite",
   "dependencies": {
     "@material-ui/core": "^4.7.1",
     "bootstrap": "^4.4.1",
