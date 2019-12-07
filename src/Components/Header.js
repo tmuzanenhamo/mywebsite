@@ -19,7 +19,7 @@ export default class Header extends Component {
 
           return <h1> Hi I'm {details.name} Muzanenhamo</h1>
         })}
-        <p>I'm an Electrical and Computer Engineering graduate from the renowned University of Cape Town </p>
+        <p>I'm an Electrical and Computer Engineering student from the renowned University of Cape Town </p>
 
       </div>
 
