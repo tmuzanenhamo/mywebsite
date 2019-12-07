@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.blog-h {
+
+  padding-top:50px ;
+
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.span4 img {
+  margin-right: 10px;
+}
+.heading {
+  font-family: 'Times New Roman', Times, serif;
+}
+.heading-1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #09d3ac;
+  padding-left: 700px;
+}
+.p {
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+img {
+  margin-right:10px;
+  border-radius: 15px;
+  max-width: auto;
+  height: auto;
+  opacity: 0.5;
+  filter: alpha(opacity=50); 
+
+}
+
+.wine-row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 90px;
+  padding-right: 90px;
+
+}
+
+.wine-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
