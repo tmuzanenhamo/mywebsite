@@ -6,6 +6,26 @@
   height: 40vmin;
 }
 
+.projects {
+
+  padding-top: 60px;
+}
+.col,
+.col-6,
+.col-5 {
+padding-top: 60px;  
+padding: 1rem;
+background-color: blue;
+border: 2px solid #fff;
+color:black;
+text-align: center;
+}
+.proj-head{
+
+  padding-top: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  color: cornflowerblue;
+}
 
 .App-header {
   background-color: #282c34;

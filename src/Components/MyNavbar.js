@@ -6,32 +6,36 @@ import {Link} from 'react-router-dom';
 class MyNavbar extends Component {
   render() {
     return (
-      <nav  className="navbar navbar-expand-sm navbar-light mb-3 py-0 fixed-top">
-        <div className ="container">
-        <Link className ="navbar-brand" to="/">Tawanda</Link>
-        <div>
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
-              <Link className= "nav-link" to="/">Home</Link>
-              </li>
-              <li className="nav-item">
-              <Link className= "nav-link" to="/About">About</Link>
-              </li>
-              <li className="nav-item">
-              <Link className= "nav-link" to="/Blog">Blog</Link>
-              </li>
-              <li className="nav-item">
-              <Link className= "nav-link" to="/Projects">Projects</Link>
-              </li>
-              <li className="nav-item">
-              <Link className= "nav-link" to="/Contact">Contact</Link>
-              </li>
-          </ul>
-        </div>
-        </div>
-      </nav>
 
+ <div class="container">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light">
+  <Link class="navbar-brand" to="/">Tawanda</Link>
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <Link class="nav-link" to="/"> Home <span class="sr-only">(current)</span></Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/About">About</Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/Blog">Blog</Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/Projects">Projects</Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/Contact">Contact</Link>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</div>
     );
   }
 }

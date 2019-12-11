@@ -6,7 +6,7 @@ import Header from './Components/Header';
 import About from './Components/About';
 import NotFound from './Components/Pages/NotFound';
 import Blog from './Components/Blog';
-
+import Projects from "./Components/Projects";
 import Contact from './Components/Contact';
 import Post from './Components/Post';
 
@@ -26,6 +26,7 @@ function App() {
         <Route exact path ="/About" component={About}/>
         <Route  exact path = "/Blog" component= {Blog}/>
         <Route exact path= "/Contact" component={Contact}/>
+        <Route exact path= "/Projects" component={Projects}/>
         <Route path="/blog/:slug" render={Post} />
         <Route component={NotFound}/>
 
