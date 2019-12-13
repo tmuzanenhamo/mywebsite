@@ -1,3 +1,38 @@
+My personal website. Easily modifiable, and built using modern javascript with Node.js, React, Express, React-Router, Hot Module Reloading, Webpack and many other technologies.
+
+### A note on adapting this repository to your own personal website
+
+Many people have contacted me about adapting this website. I have tried to make things as simple as possible. There are still bugs. I am sorry. If you find a bug, please email me (help@mldangelo.com) or submit an issue or a pull request
+
+### Dependencies
+
+Tested with:
+
+node >= v8, v9, v10, v11
+Recommend nvm for managing node version
+
+### Set up
+You may wish to fork this repository or remove my remote origin and add your own. Go here for more information on changing remotes.
+
+To download the repository and install dependencies, run the following commands:
+
+https://github.com/tmuzanenhamo/mywebsite.git
+cd mywebsite
+npm install
+If you do not have yarn installed, you may run npm install instead.
+
+Next, you should create a .env file. To do this, run:
+
+cp sample.env .env
+and set values as appropriate. Most people will not need to make changes.
+
+Run the following command to build the react application and serve it with hot module reloading:
+
+npm run dev
+Navigate to <ip>:<port> default: http://localhost:3000 to view my website.
+
+This completes set up instructions. Please continue reading to learn how to modify this site to make it your own.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
