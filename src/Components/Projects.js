@@ -1,10 +1,10 @@
 import React from 'react';
 import '../App.css';
-import projects from "../data/projects.json";
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import VS from "../Images/Virtual Assistant.jpg";
+import projects from '../data/projects';
 var images = require.context('../Images', true);
 
 
@@ -25,7 +25,7 @@ const Projects = () => {
                     <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
                   </header>
                   
-                  <a href={data.link} className="image"><img key = {data.id} src={VS} alt="" /></a>
+                  <a href={data.link} className="image"><img key = {data.id} src={data.image} alt="" /></a>
                   <div className="description">
                   <p>{data.description}</p>
                   </div>
