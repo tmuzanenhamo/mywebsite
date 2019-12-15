@@ -44,11 +44,11 @@ const Blog = () => {
   }
 
   return (
-    <div>
-       <div class = 'card' >  
-      <div class="card-body">
-      <div class="centered"></div>
-      <h1 className="blog-h">Welcome to my Blog</h1>
+    <div className = "blog-main">
+       <div className = 'card' >  
+      <div className = "card-body">
+      <div className = "centered"></div>
+      <h1 className = "blog-h">Welcome to my Blog</h1>
       {getContent()}
     </div>
     </div>

@@ -8,7 +8,8 @@
 
 .projects {
 
-  padding-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .col,
 .col-6,
@@ -25,7 +26,7 @@ text-align: center;
   padding-top: 60px;
   font-family: 'Times New Roman', Times, serif;
   color: cornflowerblue;
-  background-color:whitesmoke;
+  
 }
 
 .App-header {
@@ -44,6 +45,8 @@ text-align: center;
   padding-top:50px ;
 
 }
+
+
 
 .topnav a {
  

@@ -19,7 +19,7 @@ const Projects = () => {
                 <div>
                   <header>
                     <h3 className ="projects"><a href={data.link}>{data.title}</a></h3>
-                    <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
+                    <time className="published">{dayjs(data.date).format('MMMM, YYYY',)}</time>
                   </header>
                   
                   <a href={data.link} className="image"><img className = "col-xs-12 col-sm-6 col-md-6" key = {data.id} src={data.image} alt="" /></a>
