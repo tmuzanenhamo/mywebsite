@@ -1,10 +1,15 @@
-[
+import React from "react";
+import project1 from "../Images/vs.jpg"
+import project2 from "../Images/webblocker.jpg"
+import project3 from "../Images/image2.jpg"
+
+const projects =[
     {
 
         "id": 1,
         "title": "S.H.A.M.I.S.O",
         "link": "https://github.com/tmuzanenhamo/S.H.A.M.I.S.O-Virtual-Assistant",
-        "image":  "../Images/Virtual Assistant.jpg",
+        "image":  project1,
         "data": "2018-12-10",
         "description": "Shamiso is a two way communicating virtual assistant developed for better interactivity with a computer through voice commands."
 
@@ -14,7 +19,7 @@
         "id": 2,
         "title": "S.H.A.M.I.S.O",
         "link": "https://github.com/tmuzanenhamo/S.H.A.M.I.S.O-Virtual-Assistant",
-        "image":  "/Virtual Assistant.jpg",
+        "image": project2,
         "data": "2018-12-10",
         "description": "Shamiso is a two way communicating virtual assistant developed for better interactivity with a computer through voice commands."
 
@@ -24,7 +29,7 @@
         "id": 2,
         "title": "S.H.A.M.I.S.O",
         "link": "https://github.com/tmuzanenhamo/S.H.A.M.I.S.O-Virtual-Assistant",
-        "image":  "../Images/Virtual Assistant.jpg",
+        "image":  project3,
         "data": "2018-12-10",
         "description": "Shamiso is a two way communicating virtual assistant developed for better interactivity with a computer through voice commands."
 
@@ -61,3 +66,5 @@
     }
 
 ]
+
+export default  projects;

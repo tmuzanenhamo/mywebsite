@@ -25,6 +25,7 @@ text-align: center;
   padding-top: 60px;
   font-family: 'Times New Roman', Times, serif;
   color: cornflowerblue;
+  background-color:whitesmoke;
 }
 
 .App-header {
@@ -101,7 +102,7 @@ text-align: center;
   color: black;
   font-family: 'Times New Roman', Times, serif;
 }
-img {
+.img {
   margin-right:10px;
   border-radius: 15px;
   max-width: auto;
@@ -111,6 +112,20 @@ img {
 
 }
 
+
+.example {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.example {
+  width: 30vw;
+  height: 30vw;
+}
+
+.example-cover {
+  object-fit: cover;
+}
 .wine-row {
   display: flex;
   flex-direction: row;
