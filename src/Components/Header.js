@@ -90,7 +90,7 @@ function Header() {
         >
 
         <p className = 'header-a'><a className ='header-a' href={validateText(message) ? `mailto:${message}@tmuzanenhamo14@gmail.com` : ''}>
-        <span>My Areas of Interest includes: </span>
+        <span className='header-a'>My Areas of Interest includes: </span>
               <span>{message}</span>
               
             </a>
