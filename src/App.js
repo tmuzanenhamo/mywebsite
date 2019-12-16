@@ -10,6 +10,12 @@ import Projects from "./Components/Projects";
 import Contact from './Components/Contact';
 import Resume from './Components/Resume';
 import Post from './Components/Post';
+import ReactGA from 'react-ga';
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-154698381-1');
+  ReactGA.pageview('/About');
+}
 
 
 
