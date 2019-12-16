@@ -17,7 +17,7 @@ export default class Header extends Component {
 
         {landingData.map((details)=> {
 
-          return <h1> Hi I'm {details.name} Muzanenhamo</h1>
+          return <h1> Hi I'm {details.name}</h1>
         })}
         <p>I'm an Electrical and Computer Engineering student from the renowned University of Cape Town </p>
 

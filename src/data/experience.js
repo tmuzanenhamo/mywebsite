@@ -4,7 +4,7 @@ const experience = [
     {
 
     company: 'Thinkst Canary',
-    position: 'Software - Hardware Devloper Intern',
+    position: 'Software - Hardware Developer Intern',
     link: 'https://canary.tools/',
     daterange: 'December 2019 - Present',
     points: [

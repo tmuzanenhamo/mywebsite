@@ -23,17 +23,15 @@ class MyNavbar extends Component {
         <Link class="nav-link" to="/About">About</Link>
       </li>
       <li class="nav-item">
+        <Link class="nav-link" to="/Resume">Resume</Link>
+      </li>
+      <li class="nav-item">
         <Link class="nav-link" to="/Blog">Blog</Link>
       </li>
       <li class="nav-item">
         <Link class="nav-link" to="/Projects">Projects</Link>
       </li>
-      <li class="nav-item">
-        <Link class="nav-link" to="/Contact">Contact</Link>
-      </li>
-      <li class="nav-item">
-        <Link class="nav-link" to="/Resume">Resume</Link>
-      </li>
+     
     </ul>
   </div>
 </nav>
