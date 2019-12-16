@@ -104,7 +104,7 @@ text-align: center;
 .p {
   color: black;
   font-family: 'Times New Roman', Times, serif;
-  word-wrap: break-word
+  padding-left: 380px;
 }
 .img {
   margin-right:10px;
@@ -365,4 +365,51 @@ text-align: center;
     color: white;
   }
 
+  .about-image{
 
+    padding-top: 100px;
+    padding-left: 80px;
+    width: 600px;
+  }
+  .about-h3{
+
+    padding-top: 120px;
+    padding-left: 120px;
+  }
+  .about {
+
+    background-color: gainsboro;
+  }
+
+  .some-page-wrapper {
+    margin: 15px;
+    padding-top: 120px;
+
+  }
+  
+  .rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .columns {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+  .para{
+
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  .parag{
+
+    padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  }
