@@ -1,115 +1,183 @@
-import React, { Component } from 'react';
-import * as emailjs from 'emailjs-com';
-import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap';
-import myFace from '../Images/image22.jpg'
-
-class Contact extends Component {
-
-    state = {
-
-        name: '',
-        subject: '',
-        email: '',
-        message: ''
+import React, { useState, useEffect, useRef } from 'react';
+import '../App.css';
+import { Button } from 'reactstrap';
+import contact from '../data/contact';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
+
+
+const validateText = (text) => {
+  // NOTE: Passes RFC 5322 but not tested on google's standard.
+  // eslint-disable-next-line no-useless-escape
+  const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))$/;
+  return re.test(text) || text.length === 0;
+};
+
+const messages = [
+  'you can contact me about anything',
+  'reach out to me via email on tmuzanenhamo14@gmail.com',
+  'or contact me via my social media accounts below ', 
+  'or fill in your details and message on the form and i will get back to you'
+];
+const useInterval = (callback, delay) => {
+  const savedCallback = useRef();
+
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  useEffect(() => {
+    if (delay) {
+      const id = setInterval(() => {
+        savedCallback.current();
+      }, delay);
+      return () => clearInterval(id);
     }
+    return () => {}; // pass linter
+  }, [delay]);
+};
 
-    onChange = (e) => this.setState( {
 
-        [e.target.name]: e.target.value
-    });
 
-    onSubmit = (e) => {
 
-        e.preventDefault();
+ const Contact =()=> {
 
-        const { name, email, subject, message } = this.state
-        let templateParams = {
-            from_name: email,
-            to_name: 'tawasdev@gmail.com',
-            subject: subject,
-            message_html: message,
-           }
+  const hold = 50; // ticks to wait after message is complete before rendering next message
+  const delay = 50; // tick length in mS
 
-           emailjs.send(
-            'gmail',
-            'template_pryDoQAO',
-             templateParams,
-            'user_Oj5ZGLSxIsYM8WagnxPBt'
-           )
+  const [idx, updateIter] = useState(0); // points to current message
+  const [message, updateMessage] = useState(messages[idx]);
+  const [char, updateChar] = useState(messages[idx].length); // points to current char
+  const [isActive, setIsActive] = useState(true); // disable when all messages are printed
 
-           this.resetForm()
+  useInterval(() => {
+    let newIdx = idx;
+    let newChar = char;
+    if (char - hold >= messages[idx].length) {
+      newIdx += 1;
+      newChar = 0;
+    }
+    if (newIdx === messages.length) {
+      setIsActive(false);
+    } else {
+      updateMessage(messages[newIdx].slice(0, newChar));
+      updateIter(newIdx);
+      updateChar(newChar + 1);
+    }
+  }, isActive ? delay : null);
+
+  
+  const [firstName, setFirstName] = useState("");
+  const [firstNameError, setFirstNameError] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
+  const [emailAddressError, setEmailAddressError] = useState("");
+
+
+
+
+  
+
+  const handleFirstNameChange = (e) => {
+    setFirstName(e.currentTarget.value);
+    validateFirstName(e.currentTarget.value);
+  };
+
+  const validateFirstName = (value) => {
+    const error = value ? "" : "You must enter your first name";
+    setFirstNameError(error);
+    return error;
+  };
+
+  const handleEmailAddressChange = (e) => {
+    setEmailAddress(e.currentTarget.value);
+    validateEmailAddress(e.currentTarget.value);
+  };
+
+  const validateEmailAddress = (value) => {
+    const error = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+      value
+    )
+      ? ""
+      : "You must enter a valid email address";
+    setEmailAddressError(error);
+    return error;
+  };
+
+  const handleClick = (e) => {
+    console.log('this button was clicked');
+    e.preventDefault();
+    
+
+  }
+
+  
+  return (
+
+    <div className="container contact">
+      <div style ={{textAlign: "center"}}>
+            <h3 className ="contact-h3">Contact Me</h3>
+      </div>
+
+      <div className= "row">
+
+        <div className = "column">
+        <p>I'm open to questions, collaborations and advice.</p>
+
+        <div
+          className="inline-container"
+          style={validateText(message) ? {} : { color: 'red' }}
+          onMouseEnter={() => setIsActive(false)}
+          onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
         
-    };
+        >
 
-    resetForm() {
-        this.setState({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        })
-      }
-  render() {
+        <a href={validateText(message) ? `mailto:${message}@tmuzanenhamo14@gmail.com` : ''}>
+              <span>{message}</span>
+              <span>@tmuzanenhamo14@gmail.com</span>
+            </a>
 
-    const {name, subject, email, message} = this.state;
-    return (
+            <ul className="icons">
+          {contact.map(s => (
+            <i className="i" key={s.label}><a href={s.link}><FontAwesomeIcon icon={s.icon} /></a></i>
+          ))}
+        </ul>
+        </div>
 
-    <div class="wine-row">
-        <div class="wine-text-container">
-        <h1 className="p-heading1">Get in Touch</h1>
-          <Form onSubmit={this.onSubmit}>
-            <FormGroup controlId="formBasicEmail">
-              <Label className="text-muted">Email address</Label>
-              <Input
-                type="email"
-                name="email"
-                value={email}
-                className="text-primary"
-                onChange={this.onChange}
-                placeholder="Enter email"
-              />
-            </FormGroup>
-<FormGroup controlId="formBasicName">
-              <Label className="text-muted">Name</Label>
-              <Input
-                type="text"
-                name="name"
-                value={name}
-                className="text-primary"
-                onChange={this.onChange}
-                placeholder="Name"
-              />
-            </FormGroup>
-<FormGroup controlId="formBasicSubject">
-              <Label className="text-muted">Subject</Label>
-              <Input
-                type="text"
-                name="subject"
-                className="text-primary"
-                value={subject}
-                onChange={this.onChange}
-                placeholder="Subject"
-              />
-            </FormGroup>
-<FormGroup controlId="formBasicMessage">
-              <Label className="text-muted">Message</Label>
-              <Input
-                type="textarea"
-                name="message"
-                className="text-primary"
-                value={message}
-                onChange={this.onChange}
-              />
-            </FormGroup>
-<Button variant="primary" type="submit">
+        <p> </p>
+
+        </div>
+        <div className="column">
+        <div className="row fN">
+            <label htmlFor="firstName" className = 'first'>First name</label>
+            <input id="firstName" value={firstName} onChange={handleFirstNameChange} />
+            <span className="error"></span>
+          </div>
+          
+          <div className="row fN">
+            <label htmlFor="emailAddress" className = 'first1'>Email address</label>
+            <input  id="emailAddress" value={emailAddress} onChange={handleEmailAddressChange} />
+            <span className="error"></span>
+        </div>
+
+        <div className ='row f'>
+          <label htmlFor='subject' className= "mess">Message</label>
+          <textarea className = 'mE' id='subject'  name="subject" placeholder="Write something.." style={{height: '100px' }}></textarea>
+        </div>
+        <div className= "row but">
+
+        <Button  onClick = {handleClick} variant="primary" type="submit" className="but">
               Submit
             </Button>
-          </Form>
+        </div>
+
+        </div>
       </div>
-      </div>
-    );
-  }
+
+
+    </div>
+  );
 }
+
+
 export default Contact;

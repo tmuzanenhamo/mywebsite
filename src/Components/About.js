@@ -12,7 +12,7 @@ return (
     {aboutData.map((data)=> {
         return (
         <div>
-        <h1 className ='heading'>{data.name} {data.surname}</h1>
+        <h1 className ='heading'>{data.name}</h1>
         <br></br>
         <p className ="p">{data.bio} </p>
         </div>
