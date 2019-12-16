@@ -357,6 +357,12 @@ text-align: center;
   .html {width: 90%; background-color: #4CAF50;}
   .css {width: 80%; background-color: #2196F3;}
   .js {width: 65%; background-color: #f44336;}
-  .php {width: 60%; background-color: #808080;}  
+  .php {width: 60%; background-color: #808080;}
+  
+  .header-a{
+
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+  }
 
 
