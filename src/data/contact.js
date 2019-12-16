@@ -20,7 +20,7 @@ const contact = [
     icon: faInstagram,
   },
   {
-    link: 'https://www.linkedin.com/in/tawanda-muzanenhamo-a1007414a/',
+    link: 'linkedin.com/in/tawanda-muzanenhamo-a1007414a',
     label: 'LinkedIn',
     icon: faLinkedinIn,
   },
