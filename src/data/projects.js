@@ -1,4 +1,3 @@
-import React from "react";
 import project1 from "../Images/vs.jpg"
 import project2 from "../Images/webblocker.jpg"
 import project3 from "../Images/jcac.jpg"
