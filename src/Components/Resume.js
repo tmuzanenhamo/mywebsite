@@ -7,19 +7,15 @@ class Resume extends Component {
     return (
       <div className ='container'>
           <h1 className='heading-1'>RESUME</h1>
-          <p>EDUCATION EXPERIENCE SKILLS</p>
+          <p className ='blog-p'>EDUCATION EXPERIENCE SKILLS</p>
           <div className ="row">
             <div className= 'col-md-6'>
-          <Education/>
-          
+          <Education/>      
           </div>
           <div className = 'col-md-6'>
             <Experience/>
           </div>
           </div>
-
-      
-        
       </div>
     );
   }

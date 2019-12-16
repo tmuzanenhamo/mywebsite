@@ -43,7 +43,13 @@ text-align: center;
 .blog-h {
 
   padding-top:50px ;
+  font-family: 'Times New Roman', Times, serif;
 
+}
+
+.blog-p{
+
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -413,3 +419,4 @@ text-align: center;
     padding-top: 50px;
     font-family: 'Times New Roman', Times, serif;
   }
+

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import '../App.css'
 
 
 
@@ -7,29 +8,29 @@ class MyNavbar extends Component {
   render() {
     return (
 
- <div class="container">
-<nav class="navbar navbar-expand-lg fixed-top navbar-light">
-  <Link class="navbar-brand" to="/">Tawanda</Link>
-  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+ <div className="container">
+<nav className="navbar navbar-expand-lg fixed-top navbar-light">
+  <Link className="navbar-brand blog-p" to="/">Tawanda</Link>
+  <button className="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <Link class="nav-link" to="/"> Home <span class="sr-only">(current)</span></Link>
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className="navbar-nav ml-auto">
+      <li className="nav-item active">
+        <Link className="nav-link blog-p" to="/"> Home <span class="sr-only">(current)</span></Link>
       </li>
-      <li class="nav-item">
-        <Link class="nav-link" to="/About">About</Link>
+      <li className="nav-item">
+        <Link className="nav-link blog-p" to="/About">About</Link>
       </li>
-      <li class="nav-item">
-        <Link class="nav-link" to="/Resume">Resume</Link>
+      <li className="nav-item">
+        <Link className="nav-link blog-p" to="/Resume">Resume</Link>
       </li>
-      <li class="nav-item">
-        <Link class="nav-link" to="/Blog">Blog</Link>
+      <li className="nav-item">
+        <Link className="nav-link blog-p" to="/Blog">Blog</Link>
       </li>
-      <li class="nav-item">
-        <Link class="nav-link" to="/Projects">Projects</Link>
+      <li className="nav-item">
+        <Link className="nav-link blog-p" to="/Projects">Projects</Link>
       </li>
      
     </ul>

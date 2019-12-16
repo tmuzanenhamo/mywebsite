@@ -37,7 +37,7 @@ const Blog = () => {
   );
 
   const getContent = () => {
-    if ( loading ) return <p>Fetching posts...</p>;
+    if ( loading ) return <p className= 'blog-p'>Fetching posts...</p>;
     if ( error ) return <p>{error}</p>;
     if ( !data ) return null;
     return getPosts();
