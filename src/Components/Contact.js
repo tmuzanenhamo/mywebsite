@@ -16,7 +16,7 @@ const validateText = (text) => {
 
 const messages = [
   'you can contact me about anything',
-  'reach out to me via email on tmuzanenhamo14@gmail.com',
+  'reach out to me via email on ',
   'or contact me via my social media accounts below ', 
   'or fill in your details and message on the form and i will get back to you'
 ];
@@ -114,7 +114,8 @@ const useInterval = (callback, delay) => {
   
   return (
 
-    <div className="container contact">
+    <div className="contact">
+    <div className="container ">
       <div style ={{textAlign: "center"}}>
             <h3 className ="contact-h3">Contact Me</h3>
       </div>
@@ -175,6 +176,7 @@ const useInterval = (callback, delay) => {
       </div>
 
 
+    </div>
     </div>
   );
 }
