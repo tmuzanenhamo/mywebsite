@@ -343,7 +343,7 @@ text-align: center;
   
   .skillbutton-active {
     box-shadow: blue;
-    color: _palette(accent) !important;
+    color: blue;
   }
   
   .skillbar {
