@@ -19,8 +19,7 @@ const messages = [
     'references are available on request',
     ' Get intouch with me',
     'or contact me via my social media accounts below ',
-    'or check out some of my skills below', 
-    'or download my resume below' 
+    'or check out some of my skills below',  
   ];
   const useInterval = (callback, delay) => {
     const savedCallback = useRef();
@@ -109,7 +108,7 @@ function Education() {
         </div>
         </div>
 
-        
+
     </div>
   );
 }
