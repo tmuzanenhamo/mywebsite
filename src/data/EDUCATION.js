@@ -8,7 +8,7 @@ const  EDUCATION = [
         "year": "2014",
         "link": "#",
         'grade': 'Points',
-        'score':  '12 Points'     
+        'score':  '12'     
 
     },
 
