@@ -5,6 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-154698381-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 

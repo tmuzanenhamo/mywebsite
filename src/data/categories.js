@@ -1,37 +1,31 @@
 const categories = [
     {
       name: 'Data Science',
-      color: '#515dd4',
+      color: '#33D1FF',
     }, {
       name: 'Databases',
-      color: '#3896e2',
+      color: '#33B5FF',
     }, {
-      name: 'Design',
-      color: '#747fff',
+      name: 'Frontend',
+      color: '#339FFF',
     }, {
-      name: 'Frameworks',
-      color: '#64cb7b',
-    }, {
-      name: 'Javascript',
-      color: '#d75858',
+      name: 'Backend',
+      color: '#3380FF',
     }, {
       name: 'Languages',
-      color: '#6968b3',
+      color: '#336EFF',
     }, {
-      name: 'Machine Learning',
-      color: '#e47272',
-    }, {
-      name: 'Other',
-      color: '#c3423f',
-    }, {
-      name: 'Python',
-      color: '#37b1f5',
+      name: 'App Development',
+      color: '#3349FF',
     }, {
       name: 'Tools',
-      color: '#40494e',
+      color: '#3933FF',
     }, {
-      name: 'Web Development',
-      color: '#cc7b94',
+      name: 'Micro-controllers',
+      color: '#5533FF',
+    },{
+      name: 'Computer Networking',
+      color: '#A0C5F7',
     },
   ];
 

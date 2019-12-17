@@ -2,6 +2,10 @@ import React from 'react';
 import '../App.css';
 import dayjs from 'dayjs';
 import projects from '../data/projects';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-154698381-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 

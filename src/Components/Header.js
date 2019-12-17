@@ -3,6 +3,10 @@ import image3 from '../Images/image3.jpg';
 import '../App.css';
 import landingData from '../data/Data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-154698381-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const validateText = (text) => {
   // NOTE: Passes RFC 5322 but not tested on google's standard.
@@ -16,6 +20,7 @@ const messages = [
   'Artificial Intelligence',
   'Telecommunications',
   'Software Development ',
+  'Data Science',
   'Internet of Things',
   'Embedded Engineering', 
   'Electrical Engineering',
@@ -23,7 +28,9 @@ const messages = [
   'Algorithm Design',
   'Electronics Engineering',
   'Cloud Computing',
-  'Web Development'
+  'Web Development',
+  'Mobile Application Development',
+  'Cognitive Computing'
 ];
 const useInterval = (callback, delay) => {
   const savedCallback = useRef();

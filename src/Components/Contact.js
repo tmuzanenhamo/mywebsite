@@ -3,6 +3,10 @@ import '../App.css';
 import { Button } from 'reactstrap';
 import contact from '../data/contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-154698381-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 

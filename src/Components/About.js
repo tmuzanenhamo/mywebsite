@@ -7,6 +7,10 @@ import contact from '../data/contact';
 import aboutData from '../data/Data.json';
 import Resume from './Resume';
 import '../App.css';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-154698381-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const About = () => {
 return (

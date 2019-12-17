@@ -18,7 +18,9 @@ const validateText = (text) => {
 const messages = [
     'references are available on request',
     ' Get intouch with me',
-    'or contact me via my social media accounts below ', 
+    'or contact me via my social media accounts below ',
+    'or check out some of my skills below', 
+    'or download my resume below' 
   ];
   const useInterval = (callback, delay) => {
     const savedCallback = useRef();
@@ -106,6 +108,8 @@ function Education() {
         </ul>
         </div>
         </div>
+
+        
     </div>
   );
 }
