@@ -1,11 +1,10 @@
 
-
-My personal website. Easily modifiable, and built using modern javascript with Node.js, React, Express, React-Router,Hot Module Reloading, Webpack and many other technologies.
-
-### https://github.com/tmuzanenhamo/mywebsite.git
+### https://github.com/tmuzanenhamo/mywebsite.git My Website
 ### Demo
 
 ![Image description](./Capture.PNG)
+
+My personal website. Easily modifiable, and built using modern javascript with Node.js, React, Express, React-Router,Hot Module Reloading, Webpack and many other technologies.
 
 ## A note on adapting this repository to your own personal website
 
