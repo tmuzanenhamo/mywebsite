@@ -2,6 +2,11 @@
 
 My personal website. Easily modifiable, and built using modern javascript with Node.js, React, Express, React-Router,Hot Module Reloading, Webpack and many other technologies.
 
+### https://github.com/tmuzanenhamo/mywebsite.git
+### Demo
+
+![Image description](./Capture.PNG)
+
 ## A note on adapting this repository to your own personal website
 
 Many people have contacted me about adapting this website. I have tried to make things as simple as possible. There are still bugs. I am sorry. If you find a bug, please email me (tmuzanenhamo14@gmail.com) or submit an issue or a pull request
@@ -18,10 +23,6 @@ You may wish to fork this repository or remove my remote origin and add your own
 
 To download the repository and install dependencies, run the following commands:
 
-### https://github.com/tmuzanenhamo/mywebsite.git
-### Demo
-
-![Image description](./Capture.PNG)
 cd mywebsite
 npm install
 If you do not have yarn installed, you may run npm install instead.
