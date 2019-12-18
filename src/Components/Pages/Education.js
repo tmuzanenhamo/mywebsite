@@ -4,7 +4,6 @@ import EDUCATION from '../../data/EDUCATION';
 import '../../App.css';
 import contact from '../../data/contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PDFViewer from './PDFViewer';
 
 
 
@@ -107,7 +106,6 @@ function Education() {
           ))}
         </ul>
         </div>
-        <PDFViewer/>
         </div>
 
 
