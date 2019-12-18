@@ -215,6 +215,12 @@ const skills = [
     title: 'Octave',
     compentency: '3',
     category: ['Data Science']
+  },
+  {
+
+    title: 'Teensy 3.6',
+    compentency: '4',
+    category: ['Micro-controllers']
   }
 ];
 
