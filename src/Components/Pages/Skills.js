@@ -5,7 +5,7 @@ import '../../App.css'
 import CategoryButton from './CategoryButton';
 import SkillBar from './SkillBar';
 
-const handleProps = ({ categories, skills }) => ({
+const handleProps=({ categories, skills }) => ({
   buttons: categories.map(cat => cat.name).reduce((obj, key) => ({
     ...obj,
     [key]: false,
@@ -18,7 +18,7 @@ const handleProps = ({ categories, skills }) => ({
 class Skills extends Component {
   constructor(props) {
     super(props);
-    this.state = handleProps({ categories: props.categories, skills: props.skills });
+    this.state=handleProps({ categories: props.categories, skills: props.skills });
   }
 
   componentWillReceiveProps(nextProps) {
@@ -27,20 +27,20 @@ class Skills extends Component {
 
   getRows() {
     // search for true active categorys
-    const actCat = Object.keys(this.state.buttons).reduce((cat, key) => (
+    const actCat=Object.keys(this.state.buttons).reduce((cat, key) => (
       this.state.buttons[key] ? key : cat
     ), 'All');
 
     return this.state.skills.sort((a, b) => {
-      let ret = 0;
-      if (a.compentency > b.compentency) ret = -1;
-      else if (a.compentency < b.compentency) ret = 1;
-      else if (a.category[0] > b.category[0]) ret = -1;
-      else if (a.category[0] < b.category[0]) ret = 1;
-      else if (a.title > b.title) ret = 1;
-      else if (a.title < b.title) ret = -1;
+      let ret=0;
+      if (a.compentency > b.compentency) ret=-1;
+      else if (a.compentency < b.compentency) ret=1;
+      else if (a.category[0] > b.category[0]) ret= -1;
+      else if (a.category[0] < b.category[0]) ret= 1;
+      else if (a.title > b.title) ret=1;
+      else if (a.title < b.title) ret=-1;
       return ret;
-    }).filter(skill => (actCat === 'All' || skill.category.includes(actCat)))
+    }).filter(skill => (actCat==='All' || skill.category.includes(actCat)))
       .map(skill => (
         <SkillBar
           categories={this.props.categories}
@@ -61,15 +61,15 @@ class Skills extends Component {
     ));
   }
 
-  handleChildClick = (label) => {
+  handleChildClick=(label) => {
     this.setState((prevState) => {
       // Toggle button that was clicked. Turn all other buttons off.
-      const buttons = Object.keys(prevState.buttons).reduce((obj, key) => ({
+      const buttons=Object.keys(prevState.buttons).reduce((obj, key) => ({
         ...obj,
-        [key]: (label === key) && !prevState.buttons[key],
+        [key]: (label===key) && !prevState.buttons[key],
       }), {});
       // Turn on 'All' button if other buttons are off
-      buttons.All = !Object.keys(prevState.buttons).some(key => buttons[key]);
+      buttons.All=!Object.keys(prevState.buttons).some(key => buttons[key]);
       return { buttons };
     });
   }
@@ -93,7 +93,7 @@ class Skills extends Component {
   }
 }
 
-Skills.propTypes = {
+Skills.propTypes={
   skills: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     compentency: PropTypes.number,
@@ -105,7 +105,7 @@ Skills.propTypes = {
   })),
 };
 
-Skills.defaultProps = {
+Skills.defaultProps={
   skills: [],
   categories: [],
 };

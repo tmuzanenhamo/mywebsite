@@ -27,7 +27,7 @@ return (
           return (
           <div>
           <h1 className ='parag'>{data.name}</h1>
-          <br></br>
+          <hr/>
           <p className ="para">{data.bio} </p>
           </div>
               )

@@ -7,56 +7,56 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
-const validateText = (text) => {
+const validateText=(text) => {
     // NOTE: Passes RFC 5322 but not tested on google's standard.
     // eslint-disable-next-line no-useless-escape
-    const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))$/;
-    return re.test(text) || text.length === 0;
+    const re=/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))$/;
+    return re.test(text) || text.length===0;
   };
 
 
-const messages = [
+const messages=[
     'references are available on request',
     ' Get intouch with me',
     'or contact me via my social media accounts below ',
     'or check out some of my skills below',  
   ];
-  const useInterval = (callback, delay) => {
-    const savedCallback = useRef();
+  const useInterval=(callback, delay) => {
+    const savedCallback=useRef();
   
-    useEffect(() => {
+    useEffect(()=>{
       savedCallback.current = callback;
     }, [callback]);
   
     useEffect(() => {
       if (delay) {
-        const id = setInterval(() => {
+        const id=setInterval(() => {
           savedCallback.current();
         }, delay);
-        return () => clearInterval(id);
+        return ()=>clearInterval(id);
       }
-      return () => {}; // pass linter
+      return ()=>{}; // pass linter
     }, [delay]);
   };
 
 function Education() {
 
-  const hold = 50; // ticks to wait after message is complete before rendering next message
-  const delay = 50; // tick length in mS
+  const hold=50; // ticks to wait after message is complete before rendering next message
+  const delay=50; // tick length in mS
 
-  const [idx, updateIter] = useState(0); // points to current message
-  const [message, updateMessage] = useState(messages[idx]);
-  const [char, updateChar] = useState(messages[idx].length); // points to current char
-  const [isActive, setIsActive] = useState(true); // disable when all messages are printed
+  const [idx, updateIter]=useState(0); // points to current message
+  const [message, updateMessage]=useState(messages[idx]);
+  const [char, updateChar]=useState(messages[idx].length); // points to current char
+  const [isActive, setIsActive]=useState(true); // disable when all messages are printed
 
   useInterval(() => {
-    let newIdx = idx;
-    let newChar = char;
-    if (char - hold >= messages[idx].length) {
-      newIdx += 1;
-      newChar = 0;
+    let newIdx=idx;
+    let newChar=char;
+    if (char - hold>=messages[idx].length) {
+      newIdx+=1;
+      newChar=0;
     }
-    if (newIdx === messages.length) {
+    if (newIdx===messages.length) {
       setIsActive(false);
     } else {
       updateMessage(messages[newIdx].slice(0, newChar));
@@ -66,20 +66,23 @@ function Education() {
   }, isActive ? delay : null);
 
   return (
-    <div className ='etitle'>
-        <div className = 'link-to' id= 'education'>
-            <div className = 'etitle'>
-                <h3 className = 'headers'>Education</h3>
+    <div className='etitle'>
+        <div className='link-to' id='education'>
+            <div className='etitle'>
+                <h3 className='headers'>Education</h3>
             </div>
             {EDUCATION.map((data)=> {
                 return (
                     <div>
-                    <ul className ='timeline'>
+                    <ul className='timeline'>
                     <li>
-                        <h4 className="degree">{data.degree}</h4>
-                        <p className="school"><a href={data.link}>{data.school}</a>, {data.year}<br/>
-                         {data.grade} - {data.score}
-                        </p>
+                        <h1 className="degree">{data.degree}</h1>
+                        <p className="school"><a href={data.link}>{data.school}</a>, {data.year}
+                        <br/>
+                        <br/>
+                         {data.desc}
+                         {/* {data.grade} - {data.score} */}
+                      </p>
                     </li>
                     </ul>
                     </div>

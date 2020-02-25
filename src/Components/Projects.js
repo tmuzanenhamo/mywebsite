@@ -13,14 +13,17 @@ const Projects = () => {
 
    
     return (
+        <div className='container'>
         <div className="proj-head">
             <h1 className="proj-text blog-p"> PROJECTS </h1>
-            <p className = 'blog-p'>THIS IS A SELECTION OF SOME OF MY PROJECTS</p>
+            
+            <p className = 'blog-p'>This page is a collection of projects I've taken on over the years, some of which are still ongoing. Some are closely related to my university courses, and others are purely for my own interest and enjoyment.</p>
         <div className="cell-container">
             <article className="mini-post">
         {projects.map((data)=> {
             return (
                 <div>
+                    <hr/>
                   <header>
                     <h3 className ="projects"><a href={data.link}>{data.title}</a></h3>
                     <time className="published">{dayjs(data.date).format('MMMM, YYYY',)}</time>
@@ -40,6 +43,7 @@ const Projects = () => {
         </article>
          </div> 
          </div>  
+         </div>
     );
 
 }

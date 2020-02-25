@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css'
 
-const CategoryButton = ({ handleClick, active, label }) => (
+const CategoryButton=({ handleClick, active, label }) => (
   <button
     className={`skillbutton ${active[label] ? 'skillbutton-active' : ''}`}
     type="button"
-    onClick={() => handleClick(label)}
+    onClick={()=>handleClick(label)}
   >
     {label}
   </button>

@@ -2,11 +2,24 @@ import project1 from "../Images/vs.jpg"
 import project2 from "../Images/webblocker.jpg"
 import project3 from "../Images/jcac.jpg"
 import project4 from "../Images/twiddle.PNG"
+import project5 from "../Images/dnfLodge.PNG"
 
 const projects =[
+
+
     {
 
-        "id": 2,
+        "id":2,
+        "title": "D&F Lodge Booking Management System",
+        "link": "https://github.com/tmuzanenhamo/Hotel-Management-System-Fullstack-Webapp",
+        "image":  project5,
+        "date": "2020-01-01",
+        "description": "This is a fullstack web application built for DnF Lodge to help migrate from the book based booking system to a web based system which can be accessed on any device connected on the internet."
+
+    },
+    {
+
+        "id": 5,
         "title": "WEBSITE BLOCKER",
         "link": "https://github.com/tmuzanenhamo/Website-Blocker",
         "image": project2,

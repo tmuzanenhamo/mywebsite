@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css'
 
-const SkillBar = ({ data, categories }) => {
+const SkillBar=({ data, categories }) => {
   const { category, compentency, title } = data;
 
   // TODO: Consider averaging colors
-  const titleStyle = {
+  const titleStyle={
     background: categories
       .filter(cat => category.includes(cat.name))
       .map(cat => cat.color)[0],
   };
 
-  const barStyle = {
+  const barStyle={
     ...titleStyle,
     width: `${String(Math.min(100, Math.max((compentency / 5.0) * 100.0, 0)))}%`,
   };
@@ -26,7 +26,7 @@ const SkillBar = ({ data, categories }) => {
   );
 };
 
-SkillBar.propTypes = {
+SkillBar.propTypes={
   data: PropTypes.shape({
     category: PropTypes.arrayOf(PropTypes.string).isRequired,
     compentency: PropTypes.number.isRequired,
@@ -38,7 +38,7 @@ SkillBar.propTypes = {
   })),
 };
 
-SkillBar.defaultProps = {
+SkillBar.defaultProps={
   categories: [],
 };
 

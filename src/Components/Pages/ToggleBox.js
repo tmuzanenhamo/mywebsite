@@ -4,36 +4,36 @@ class ToggleBox extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {
+		this.state={
 			opened: true,
 		};
-		this.toggleBox = this.toggleBox.bind(this);
+		this.toggleBox=this.toggleBox.bind(this);
 	}
   
 	toggleBox() {
-		const { opened } = this.state;
+		const { opened }=this.state;
 		this.setState({
 			opened: !opened,
 		});
 	}
   
 	render() {
-		var { title, title2, children } = this.props;
+		var { title, title2,children }=this.props;
 		const { opened } = this.state;
 
 		if (opened){
-			title ='All';
+			title='All';
 		}else{
-			title ='All';
+			title='All';
         }
         
         if (opened){
 
-            title2 = 'Programming Languages'
+            title2='Programming Languages'
 
         }else{
 
-            title2 = 'Programming Langauges'
+            title2='Programming Langauges'
         }
 
 		return (

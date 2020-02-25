@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../App.css'
 import ReactGA from 'react-ga';
-
 ReactGA.initialize('UA-154698381-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
-
 
 
 class MyNavbar extends Component {
@@ -30,9 +28,9 @@ class MyNavbar extends Component {
       <li className="nav-item">
         <Link className="nav-link blog-p" to="/Resume">Resume</Link>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <Link className="nav-link blog-p" to="/Blog">Blog</Link>
-      </li>
+      </li> */}
       <li className="nav-item">
         <Link className="nav-link blog-p" to="/Projects">Projects</Link>
       </li>

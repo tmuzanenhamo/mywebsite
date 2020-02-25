@@ -4,6 +4,7 @@ import '../App.css';
 import landingData from '../data/Data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReactGA from 'react-ga';
+import {Link} from 'react-router-dom';
 
 ReactGA.initialize('UA-154698381-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -85,9 +86,10 @@ function Header() {
 
         {landingData.map((details)=> {
 
-          return <h1 className = 'header-a'> {details.greeting} {details.name}</h1>
+          return <h1 className = 'header-a'> Dream big, believe bold!
+          </h1>
         })}
-        <p className ='header-a'>I'm an Electrical and Computer Engineering student from the renowned University of Cape Town<br/> 
+        <p className ='header-a'>Hello and welcome to my ePortfolio. Thank you for taking the time to get to know me. If you like what you see, and would like to find out more, please feel free to <Link to="/Resume">contact me</Link>
         </p>
         <div
           className="inline-container"
@@ -95,7 +97,6 @@ function Header() {
           onMouseEnter={() => setIsActive(false)}
           onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
         >
-
         <p className = 'header-a'><a className ='header-a' href={validateText(message) ? `mailto:${message}@tmuzanenhamo14@gmail.com` : ''}>
         <span className='header-a'>My areas of Interest includes: </span>
               <span>{message}</span>
