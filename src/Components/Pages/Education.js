@@ -79,7 +79,6 @@ function Education() {
                         <h1 className="degree">{data.degree}</h1>
                         <p className="school"><a href={data.link}>{data.school}</a>, {data.year}
                         <br/>
-                        <br/>
                          {data.desc}
                          {/* {data.grade} - {data.score} */}
                       </p>
