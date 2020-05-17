@@ -3,6 +3,7 @@ import '../App.css';
 import dayjs from 'dayjs';
 import projects from '../data/projects';
 import ReactGA from 'react-ga';
+import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 ReactGA.initialize('UA-154698381-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -15,18 +16,15 @@ const Projects = () => {
 
             let fData = [];
             let j = 0;
-            console.log('before while')
             while (j < data.length){
                 let row = [];
-                console.log('before for')
                 for (let i = j; i < j+3 ;i++){
                     if (i < data.length){
                     row.push(data[i])
                         }
                 }
                 j = j+3;
-                fData.push(row); 
-                console.log(row)      
+                fData.push(row);       
             }
             
             return fData;
@@ -45,19 +43,19 @@ const Projects = () => {
         <div className="">
             <article className="mini-post">
            
-        {fdata.map((data)=> {
+        {fdata.map((data, index)=> {
             return (
-                <div className= 'row'>
-                    {data.map((project) => {
+                <div className= 'row' key = {index}>
+                    {data.map((project, index) => {
                         return(
-                            <div className='col-md-4'>
+                            <div className='col-md-4' key ={index}>
                             <hr/>
                             <header>
                               <h3 className ="projects"><a href={project.link}>{project.title}</a></h3>
                               <time className="published">{dayjs(project.date).format('MMMM, YYYY',)}</time>
                             </header> 
                             <a href={data.link} className="image"><img className = "col-xs-12 col-sm-6 col-md-6" key = {project.id} src={project.image} alt="" /></a>
-                            <div className="description">
+                            <div className="description" key ={index}>
                             <p className='blog-p'>{project.description}</p>
                             </div>
                           </div>

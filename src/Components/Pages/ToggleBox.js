@@ -21,21 +21,6 @@ class ToggleBox extends React.Component {
 		var { title, title2,children }=this.props;
 		const { opened } = this.state;
 
-		if (opened){
-			title='All';
-		}else{
-			title='All';
-        }
-        
-        if (opened){
-
-            title2='Programming Languages'
-
-        }else{
-
-            title2='Programming Langauges'
-        }
-
 		return (
 			<div className="box">
 				<div className="boxTitle" onClick={this.toggleBox}>

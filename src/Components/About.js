@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom';
 import myFace from '../Images/ima.jpg';
 import contact from '../data/contact';
 import aboutData from '../data/Data.json';
-import Resume from './Resume';
 import '../App.css';
 import ReactGA from 'react-ga';
 

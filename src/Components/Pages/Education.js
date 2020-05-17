@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
 import EDUCATION from '../../data/EDUCATION';
 import '../../App.css';
 import contact from '../../data/contact';

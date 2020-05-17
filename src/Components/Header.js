@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import image3 from '../Images/image3.jpg';
 import '../App.css';
-import landingData from '../data/Data.json';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReactGA from 'react-ga';
 import {Link} from 'react-router-dom';
 
@@ -79,16 +77,12 @@ function Header() {
     
     return (
 
-      <div class = 'card' >  
-      <img src= {image3} alt="Logo"/>
+      <div class = 'card ' >  
+      <img className = 'photo' src= {image3} alt="Logo"/>
       <div class="card-body">
       <div class="centered">
-
-        {landingData.map((details)=> {
-
-          return <h1 className = 'header-a'> Dream big, believe bold!
-          </h1>
-        })}
+        <div className='new-header'>
+        <h1 className = 'header-a'> Dream big, believe bold!</h1>
         <p className ='header-a'>Hello and welcome to my ePortfolio. Thank you for taking the time to get to know me. If you like what you see, and would like to find out more, please feel free to <Link to="/Resume">contact me</Link>
         </p>
         <div
@@ -97,12 +91,13 @@ function Header() {
           onMouseEnter={() => setIsActive(false)}
           onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
         >
-        <p className = 'header-a'><a className ='header-a' href={validateText(message) ? `mailto:${message}@tmuzanenhamo14@gmail.com` : ''}>
-        <span className='header-a'>My areas of Interest includes: </span>
-              <span>{message}</span>
+          <p className = 'header-a'><a className ='header-a' href={validateText(message) ? `mailto:${message}@tmuzanenhamo14@gmail.com` : ''}>
+          <span className='header-a'>My areas of Interest includes: </span>
+          <span>{message}</span>
               
             </a>
            </p>
+        </div>
         </div>
       </div>
 

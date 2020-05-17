@@ -3,6 +3,9 @@ import project2 from "../Images/webblocker.jpg"
 import project3 from "../Images/jcac.jpg"
 import project4 from "../Images/twiddle.PNG"
 import project5 from "../Images/dnfLodge.PNG"
+import project6 from "../Images/vh.jfif"
+import project7 from "../Images/covid.jpg"
+import project8 from "../Images/sonar.jpg"
 
 const projects =[
 
@@ -57,7 +60,33 @@ const projects =[
         "date": "2018-10-29",
         "description": " In brief this is an electronic form of the classic ‘dial combination safe’ (or DCS as they call it in the trade) combinational lock mechanism. This project used a Raspberry-based application."
 
+    }, {
+
+        "id": 6,
+        "title":"5G Slice Handover Algorithm",
+        "link": "https://github.com/tmuzanenhamo/Algorithm-for-Slice-Handover-in-5G-Networks",
+        "image": project6,
+        "description": "For my BSc Electrical and Computer Engineering, I am working on an algorithm for making handover decisions in 5G Networks. The Algorithm designed is based on the hybrid of Fuzzy Logic and Multiple Attribute Decision Making (MADM) Techniques namely TOPSIS."
+    }, 
+    {
+
+        "id": 7,
+        "title":"Covid-19 Tracker",
+        "link": "https://tmuzanenhamo.github.io/Covid-19-Tracker/",
+        "image": project7,
+        "description": "This is a single page web application created with react to help people keep track of the COVID-19 stats around the world."
+    },
+
+    {
+
+        "id": 8,
+        "title":"Direction Finding Sonar",
+        "link": "https://github.com/tmuzanenhamo/SonarImaging-Project",
+        "image": project8,
+        "description": "In my 3rd year at UCT, we were tasked with designing and implementing a 2D direction finding sonar. The project was a success and our model was able to detect an object located 10m away."
     }
+
+    
 
 ]
 

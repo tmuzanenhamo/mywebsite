@@ -26,7 +26,7 @@ class Skills extends Component {
   }
 
   getRows() {
-    // search for true active categorys
+    // search for true active category
     const actCat=Object.keys(this.state.buttons).reduce((cat, key) => (
       this.state.buttons[key] ? key : cat
     ), 'All');
@@ -69,14 +69,14 @@ class Skills extends Component {
         [key]: (label===key) && !prevState.buttons[key],
       }), {});
       // Turn on 'All' button if other buttons are off
-      buttons.All=!Object.keys(prevState.buttons).some(key => buttons[key]);
+      buttons.All=Object.keys(prevState.buttons).some(key => buttons[key]);
       return { buttons };
     });
   }
 
   render() {
     return (
-      <div className="skills">
+      <div className="skills"> 
         <div className="link-to" id="skills" />
         <div className="title">
           <h1>Skills</h1>
