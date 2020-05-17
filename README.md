@@ -1,5 +1,5 @@
 
-### https://github.com/tmuzanenhamo/mywebsite.git My Website
+### https://github.com/tmuzanenhamo/mywebsite My Website
 ### Demo
 
 ![Image description](./Capture.PNG)
