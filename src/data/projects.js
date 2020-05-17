@@ -66,6 +66,7 @@ const projects =[
         "title":"5G Slice Handover Algorithm",
         "link": "https://github.com/tmuzanenhamo/Algorithm-for-Slice-Handover-in-5G-Networks",
         "image": project6,
+        "date": "2020-03-01",
         "description": "For my BSc Electrical and Computer Engineering, I am working on an algorithm for making handover decisions in 5G Networks. The Algorithm designed is based on the hybrid of Fuzzy Logic and Multiple Attribute Decision Making (MADM) Techniques namely TOPSIS."
     }, 
     {
@@ -74,6 +75,7 @@ const projects =[
         "title":"Covid-19 Tracker",
         "link": "https://tmuzanenhamo.github.io/Covid-19-Tracker/",
         "image": project7,
+        "date": "2020-03-28",
         "description": "This is a single page web application created with react to help people keep track of the COVID-19 stats around the world."
     },
 
@@ -83,6 +85,7 @@ const projects =[
         "title":"Direction Finding Sonar",
         "link": "https://github.com/tmuzanenhamo/SonarImaging-Project",
         "image": project8,
+        "date": "2019-10-10",
         "description": "In my 3rd year at UCT, we were tasked with designing and implementing a 2D direction finding sonar. The project was a success and our model was able to detect an object located 10m away."
     }
 
