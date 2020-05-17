@@ -11,6 +11,30 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Projects = () => {
 
+    const formatData = (data) => {
+
+            let fData = [];
+            let j = 0;
+            console.log('before while')
+            while (j < data.length){
+                let row = [];
+                console.log('before for')
+                for (let i = j; i < j+3 ;i++){
+                    if (i < data.length){
+                    row.push(data[i])
+                        }
+                }
+                j = j+3;
+                fData.push(row); 
+                console.log(row)      
+            }
+            
+            return fData;
+                
+            }
+    
+      let fdata = formatData(projects)
+    //   console.log(fdata)      
    
     return (
         <div className='container'>
@@ -18,23 +42,31 @@ const Projects = () => {
             <h1 className="proj-text blog-p"> PROJECTS </h1>
             
             <p className = 'blog-p'>This page is a collection of projects I've taken on over the years, some of which are still ongoing. Some are closely related to my university courses, and others are purely for my own interest and enjoyment.</p>
-        <div className="cell-container">
+        <div className="">
             <article className="mini-post">
-        {projects.map((data)=> {
+           
+        {fdata.map((data)=> {
             return (
-                <div>
-                    <hr/>
-                  <header>
-                    <h3 className ="projects"><a href={data.link}>{data.title}</a></h3>
-                    <time className="published">{dayjs(data.date).format('MMMM, YYYY',)}</time>
-                  </header>
-                  
-                  <a href={data.link} className="image"><img className = "col-xs-12 col-sm-6 col-md-6" key = {data.id} src={data.image} alt="" /></a>
-                  <div className="description">
-                  <p className='blog-p'>{data.description}</p>
-                  </div>
-                </div>
-                
+                <div className= 'row'>
+                    {data.map((project) => {
+                        return(
+                            <div className='col-md-4'>
+                            <hr/>
+                            <header>
+                              <h3 className ="projects"><a href={project.link}>{project.title}</a></h3>
+                              <time className="published">{dayjs(project.date).format('MMMM, YYYY',)}</time>
+                            </header> 
+                            <a href={data.link} className="image"><img className = "col-xs-12 col-sm-6 col-md-6" key = {project.id} src={project.image} alt="" /></a>
+                            <div className="description">
+                            <p className='blog-p'>{project.description}</p>
+                            </div>
+                          </div>
+                        )
+
+
+
+                    })}
+                    </div>
               
                 )
             }
