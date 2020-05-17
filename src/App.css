@@ -531,4 +531,20 @@ text-align: center;
       margin-top: 90px;
       font-family: 'Times New Roman', Times, serif;
     }
+
+    .photo {
+      height: 100%;
+      width: 100%;
+    }
+    .intro {
+
+      font-size: 12px;
+      font-style: italic;
+      font-family: cursive;
+    }
+    .creator {
+
+      font-style: italic;
+      font-family: cursive;
+    }
   

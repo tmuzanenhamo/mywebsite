@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
-import myFace from '../Images/image22.jpg';
+import myFace from '../Images/ima.jpg';
 import contact from '../data/contact';
 import aboutData from '../data/Data.json';
 import Resume from './Resume';
@@ -18,7 +18,7 @@ return (
   <div class='rows'>
     <div class='columns'>
       <div class=''>
-        <img src={myFace} alt=''/>
+        <img className='photo' src={myFace} alt=''/>
       </div>
     </div>
     <div class='columns'>
@@ -27,8 +27,17 @@ return (
           return (
           <div>
           <h1 className ='parag'>{data.name}</h1>
+          <p className = 'intro'>{data.intro}</p>
           <hr/>
-          <p className ="para">{data.bio} </p>
+          <h4 className='creator'> Creator </h4>
+          <p>{data.creator}</p>
+          <hr/>
+          <h4 className='creator'> Innovator </h4>
+          <p>{data.innovator}</p>
+          <hr/>
+          <h4 className='creator'> Fabricator </h4>
+          <p>{data.fabricator}</p>
+
           </div>
               )
             }

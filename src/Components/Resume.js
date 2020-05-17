@@ -15,7 +15,7 @@ class Resume extends Component {
       <div className ='container'>
           <h1 className='heading-1'>RESUME</h1>
           <hr/>
-          <p className ='blog-p'>EDUCATION EXPERIENCE SKILLS</p>
+          <p className ='blog-p'>EDUCATION | EXPERIENCE | SKILLS</p>
           <div className ="row">
             <div className= 'col-md-6'>
           <Education/>            
