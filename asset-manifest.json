@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.51802f4c.chunk.css",
-    "main.js": "/mywebsite/static/js/main.aa5b6465.chunk.js",
-    "main.js.map": "/mywebsite/static/js/main.aa5b6465.chunk.js.map",
+    "main.css": "/mywebsite/static/css/main.3c8a7621.chunk.css",
+    "main.js": "/mywebsite/static/js/main.6311ee61.chunk.js",
+    "main.js.map": "/mywebsite/static/js/main.6311ee61.chunk.js.map",
     "runtime-main.js": "/mywebsite/static/js/runtime-main.4bb7b1d2.js",
     "runtime-main.js.map": "/mywebsite/static/js/runtime-main.4bb7b1d2.js.map",
     "static/css/2.1a739b2a.chunk.css": "/mywebsite/static/css/2.1a739b2a.chunk.css",
     "static/js/2.79269710.chunk.js": "/mywebsite/static/js/2.79269710.chunk.js",
     "static/js/2.79269710.chunk.js.map": "/mywebsite/static/js/2.79269710.chunk.js.map",
     "index.html": "/mywebsite/index.html",
-    "precache-manifest.ed104631c39875954713cd3c6f51adae.js": "/mywebsite/precache-manifest.ed104631c39875954713cd3c6f51adae.js",
+    "precache-manifest.ff02a665491aced819c70e1680b39fb2.js": "/mywebsite/precache-manifest.ff02a665491aced819c70e1680b39fb2.js",
     "service-worker.js": "/mywebsite/service-worker.js",
     "static/css/2.1a739b2a.chunk.css.map": "/mywebsite/static/css/2.1a739b2a.chunk.css.map",
-    "static/css/main.51802f4c.chunk.css.map": "/mywebsite/static/css/main.51802f4c.chunk.css.map",
+    "static/css/main.3c8a7621.chunk.css.map": "/mywebsite/static/css/main.3c8a7621.chunk.css.map",
     "static/media/covid.jpg": "/mywebsite/static/media/covid.a0d91e06.jpg",
     "static/media/dnfLodge.PNG": "/mywebsite/static/media/dnfLodge.adaffb05.PNG",
     "static/media/font-awesome.min.css": "/mywebsite/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/ima.jpg": "/mywebsite/static/media/ima.11d42f44.jpg",
     "static/media/image3.jpg": "/mywebsite/static/media/image3.5dc5dfbe.jpg",
     "static/media/jcac.jpg": "/mywebsite/static/media/jcac.5690d807.jpg",
+    "static/media/latest.PNG": "/mywebsite/static/media/latest.9cf94617.PNG",
     "static/media/sonar.jpg": "/mywebsite/static/media/sonar.eff66a3a.jpg",
     "static/media/twiddle.PNG": "/mywebsite/static/media/twiddle.24c3cae8.PNG",
     "static/media/vh.jfif": "/mywebsite/static/media/vh.21137cd6.jfif",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.4bb7b1d2.js",
     "static/css/2.1a739b2a.chunk.css",
     "static/js/2.79269710.chunk.js",
-    "static/css/main.51802f4c.chunk.css",
-    "static/js/main.aa5b6465.chunk.js"
+    "static/css/main.3c8a7621.chunk.css",
+    "static/js/main.6311ee61.chunk.js"
   ]
 }
