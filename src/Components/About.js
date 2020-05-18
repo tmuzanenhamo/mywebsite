@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
-import myFace from '../Images/ima.jpg';
+import myFace from '../Images/latest.PNG';
 import contact from '../data/contact';
 import aboutData from '../data/Data.json';
 import '../App.css';
@@ -17,7 +17,7 @@ return (
   <div class='rows'>
     <div class='columns'>
       <div class=''>
-        <img className='photo' src={myFace} alt=''/>
+        <img className='' src={myFace} alt=''/>
       </div>
     </div>
     <div class='columns'>

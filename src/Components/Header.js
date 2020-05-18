@@ -78,7 +78,7 @@ function Header() {
     return (
 
       <div class = 'card ' >  
-      <img className = 'photo' src= {image3} alt="Logo"/>
+      <img className = '' src= {image3} alt="Logo"/>
       <div class="card-body">
       <div class="centered">
         <div className='new-header'>
