@@ -45,7 +45,7 @@ const experience = [
         daterange: 'July 2019 - August 2019',
         points: [
           'Went through a 5 day course in MATLAB and SIMULINK',
-          'Worked on a Business Intelligence project using MATLAB and won first price.',
+          'Worked on a Business Intelligence project using MATLAB.',
         ],
         },
 

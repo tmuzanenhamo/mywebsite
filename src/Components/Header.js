@@ -80,7 +80,7 @@ function Header() {
       <div className="centered">
         <div className='new-header'>
         <h1 className = 'catchy-tag'>Aim for the STARS</h1>
-        <p className ='header-p'>Hello and welcome to my ePortfolio. My name is Tawanda Muzanenhamo, i am a final year Elctrical and Computer Engineering studet at the University of Cape Town</p>
+        <p className ='header-p'>Hello and welcome to my ePortfolio. My name is Tawanda Muzanenhamo, i am a final year Elctrical and Computer Engineering student at the University of Cape Town</p>
         <div
           className="inline-container"
           style={validateText(message) ? {} : { color: 'white' }}

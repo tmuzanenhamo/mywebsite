@@ -36,7 +36,7 @@ return (
         )
         } 
       </div>
-      <Button variant="outline-secondary"><Link to="/Resume">Contact Me</Link></Button>
+      <Button id="buttons" ><Link to="/Resume">Contact Me</Link></Button>
       <ul className="icons">
           {contact.map(s => (
             <i className="i" key={s.label}><a href={s.link}><FontAwesomeIcon icon={s.icon} /></a></i>
