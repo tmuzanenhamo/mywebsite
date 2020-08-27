@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.3c8a7621.chunk.css",
-    "main.js": "/mywebsite/static/js/main.6311ee61.chunk.js",
-    "main.js.map": "/mywebsite/static/js/main.6311ee61.chunk.js.map",
+    "main.css": "/mywebsite/static/css/main.30175155.chunk.css",
+    "main.js": "/mywebsite/static/js/main.1cd1b588.chunk.js",
+    "main.js.map": "/mywebsite/static/js/main.1cd1b588.chunk.js.map",
     "runtime-main.js": "/mywebsite/static/js/runtime-main.4bb7b1d2.js",
     "runtime-main.js.map": "/mywebsite/static/js/runtime-main.4bb7b1d2.js.map",
     "static/css/2.1a739b2a.chunk.css": "/mywebsite/static/css/2.1a739b2a.chunk.css",
-    "static/js/2.79269710.chunk.js": "/mywebsite/static/js/2.79269710.chunk.js",
-    "static/js/2.79269710.chunk.js.map": "/mywebsite/static/js/2.79269710.chunk.js.map",
+    "static/js/2.0241e02e.chunk.js": "/mywebsite/static/js/2.0241e02e.chunk.js",
+    "static/js/2.0241e02e.chunk.js.map": "/mywebsite/static/js/2.0241e02e.chunk.js.map",
     "index.html": "/mywebsite/index.html",
-    "precache-manifest.ff02a665491aced819c70e1680b39fb2.js": "/mywebsite/precache-manifest.ff02a665491aced819c70e1680b39fb2.js",
+    "precache-manifest.909143b002525d893675c6507162f2c8.js": "/mywebsite/precache-manifest.909143b002525d893675c6507162f2c8.js",
     "service-worker.js": "/mywebsite/service-worker.js",
     "static/css/2.1a739b2a.chunk.css.map": "/mywebsite/static/css/2.1a739b2a.chunk.css.map",
-    "static/css/main.3c8a7621.chunk.css.map": "/mywebsite/static/css/main.3c8a7621.chunk.css.map",
+    "static/css/main.30175155.chunk.css.map": "/mywebsite/static/css/main.30175155.chunk.css.map",
+    "static/media/Tawanda Muzanenhamo CV.pdf": "/mywebsite/static/media/Tawanda Muzanenhamo CV.ca61b605.pdf",
+    "static/media/App.css": "/mywebsite/static/media/astronomy-1868560.91d57bec.jpg",
     "static/media/covid.jpg": "/mywebsite/static/media/covid.a0d91e06.jpg",
     "static/media/dnfLodge.PNG": "/mywebsite/static/media/dnfLodge.adaffb05.PNG",
     "static/media/font-awesome.min.css": "/mywebsite/static/media/fontawesome-webfont.fee66e71.woff",
@@ -27,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.4bb7b1d2.js",
     "static/css/2.1a739b2a.chunk.css",
-    "static/js/2.79269710.chunk.js",
-    "static/css/main.3c8a7621.chunk.css",
-    "static/js/main.6311ee61.chunk.js"
+    "static/js/2.0241e02e.chunk.js",
+    "static/css/main.30175155.chunk.css",
+    "static/js/main.1cd1b588.chunk.js"
   ]
 }
