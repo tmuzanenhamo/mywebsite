@@ -1,8 +1,5 @@
 const categories = [
     {
-      name: 'Data Science',
-      color: '#33D1FF',
-    }, {
       name: 'Databases',
       color: '#33B5FF',
     }, {

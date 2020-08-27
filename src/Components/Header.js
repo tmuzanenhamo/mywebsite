@@ -3,6 +3,9 @@ import image3 from '../Images/image3.jpg';
 import '../App.css';
 import ReactGA from 'react-ga';
 import {Link} from 'react-router-dom';
+import contact from '../data/contact';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 ReactGA.initialize('UA-154698381-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -16,20 +19,15 @@ const validateText = (text) => {
 
 
 const messages = [
-  'Artificial Intelligence',
   'Telecommunications',
   'Software Development ',
   'Data Science',
   'Internet of Things',
   'Embedded Engineering', 
   'Electrical Engineering',
-  'Hardware Programming',
-  'Algorithm Design',
   'Electronics Engineering',
-  'Cloud Computing',
   'Web Development',
-  'Mobile Application Development',
-  'Cognitive Computing'
+
 ];
 const useInterval = (callback, delay) => {
   const savedCallback = useRef();
@@ -77,14 +75,12 @@ function Header() {
     
     return (
 
-      <div class = 'card ' >  
-      <img className = '' src= {image3} alt="Logo"/>
-      <div class="card-body">
-      <div class="centered">
+      <div className = '' id="showcase" >  
+      <div className="card-body">
+      <div className="centered">
         <div className='new-header'>
-        <h1 className = 'header-a'> Dream big, believe bold!</h1>
-        <p className ='header-a'>Hello and welcome to my ePortfolio. Thank you for taking the time to get to know me. If you like what you see, and would like to find out more, please feel free to <Link to="/Resume">contact me</Link>
-        </p>
+        <h1 className = 'catchy-tag'>Aim for the STARS</h1>
+        <p className ='header-p'>Hello and welcome to my ePortfolio. My name is Tawanda Muzanenhamo, i am a final year Elctrical and Computer Engineering studet at the University of Cape Town</p>
         <div
           className="inline-container"
           style={validateText(message) ? {} : { color: 'white' }}
@@ -92,11 +88,18 @@ function Header() {
           onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
         >
           <p className = 'header-a'><a className ='header-a' href={validateText(message) ? `mailto:${message}@tmuzanenhamo14@gmail.com` : ''}>
-          <span className='header-a'>My areas of Interest includes: </span>
+          <span className='header-a'>My areas of interest include: </span>
           <span>{message}</span>
               
             </a>
            </p>
+           <p><Link id = "button" to="/About">Read More</Link></p>
+           <br/>
+           <ul className="icons">
+          {contact.map(s => (
+            <i className="i" key={s.label}><a href={s.link}><FontAwesomeIcon icon={s.icon} /></a></i>
+          ))}
+        </ul>
         </div>
         </div>
       </div>

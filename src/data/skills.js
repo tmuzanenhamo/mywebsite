@@ -66,7 +66,7 @@ const skills = [
   },
   {
     title: 'Flask',
-    compentency: 3,
+    compentency: 5,
     category: ['Backend'],
   },
   {
@@ -100,11 +100,6 @@ const skills = [
     category: ['Data Science'],
   },
   {
-    title: 'Typescript',
-    compentency: 3,
-    category: ['Frontend', 'Languages'],
-  },
-  {
     title: 'HTML',
     compentency: 4,
     category: ['Frontend'],
@@ -126,9 +121,9 @@ const skills = [
     category: ['Languages'],
   },
   {
-    title: 'Business Intelligence',
-    compentency: 3,
-    category: ['Data Science'],
+    title: 'Docker',
+    compentency: 2,
+    category: ['Tools'],
   },
   {
     title: 'Visualization',
@@ -136,14 +131,14 @@ const skills = [
     category: ['Data Science'],
   },
   {
-    title: 'Angular',
-    compentency: '4',
+    title: 'Vue Js',
+    compentency: '3',
     category: ['Frontend']
 
   },
   {
     title: 'Django',
-    compentency: '3',
+    compentency: '4',
     category: ['Backend']
 
   }, {

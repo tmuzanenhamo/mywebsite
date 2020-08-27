@@ -5,8 +5,9 @@ const  EDUCATION = [
         "id": 1,
         "school": "Marondera High School",
         "degree": "A-Level",
-        "year": "2014",
-        "link": "#",
+        "desc": "I had the honour of attending Marondera High School from, form 1 to upper 6 (6 years). Throughout my High School, i participated in different sports and clubs. My involvement in the extracurricular activities did not hinder my academic progress because i managed to stay in the top 10 best students in my class at both O Level and A Level.",
+        "year": "2009-2014",
+        "link": "https://en.wikipedia.org/wiki/Marondera_High_School",
         'grade': 'Points',
         'score':  '12'     
 
@@ -15,9 +16,9 @@ const  EDUCATION = [
     {
 
         "id": 2,
-        "school": "University fo Cape Town",
+        "school": "University of Cape Town",
         "degree": "Electrical and Computer Engineering",
-        "desc": "Electrical and Computer Engineering is a versatile degree, combining aspects of Electrical Engineering,Computer Engineering and Computer Science. I have found the curriculum very stimulating, and have enjoyed expanding my knowledge in a wide range of topics. I have been exposed to fields such as,electronics design, image processing, and signal processing to name a few. My focus in my final year is predominantly on machine learning applications in 5G and Wireless Communications.",
+        "desc": "Electrical and Computer Engineering is a versatile degree, combining aspects of Electrical Engineering,Computer Engineering and Computer Science. I have found the curriculum very stimulating, and have enjoyed expanding my knowledge in a wide range of topics. I have been exposed to fields such as,electronics design, image processing, signal processing embedded engineering, professional communication and new venture planning to name a few. My focus in my final year is predominantly on machine learning applications in 5G and Wireless Communications.",
         "year": "2016 - Present",
         "link": "https://www.uct.ac.za/",
         'grade': 'GPA',

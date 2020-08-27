@@ -28,14 +28,7 @@ return (
           <h1 className ='parag'>{data.name}</h1>
           <p className = 'intro'>{data.intro}</p>
           <hr/>
-          <h4 className='creator'> Creator </h4>
-          <p>{data.creator}</p>
-          <hr/>
-          <h4 className='creator'> Innovator </h4>
-          <p>{data.innovator}</p>
-          <hr/>
-          <h4 className='creator'> Fabricator </h4>
-          <p>{data.fabricator}</p>
+          <p id="parag">{data.bio}</p>
 
           </div>
               )

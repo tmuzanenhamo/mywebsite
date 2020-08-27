@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import EDUCATION from '../../data/EDUCATION';
+import {Link} from 'react-router-dom';
 import '../../App.css';
 import contact from '../../data/contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import pdf from "../../data/Tawanda Muzanenhamo CV.pdf"
 
 
 const validateText=(text) => {
@@ -13,10 +14,11 @@ const validateText=(text) => {
     return re.test(text) || text.length===0;
   };
 
+ function onResumeClick() {
+    window.open(pdf)
+  }
 
 const messages=[
-    'references are available on request',
-    ' Get intouch with me',
     'or contact me via my social media accounts below ',
     'or check out some of my skills below',  
   ];
@@ -95,7 +97,8 @@ function Education() {
           onMouseEnter={() => setIsActive(false)}
           onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
         >
-
+        <button id="buttons" onClick={onResumeClick} ><i class="fa fa-download" aria-hidden="true"></i>{' '}Download Resume</button>
+        <br/>
         <a href={validateText(message) ? `mailto:${message}@tmuzanenhamo14@gmail.com` : ''}>
               <span>{message}</span>
               <span> @tmuzanenhamo14@gmail.com</span>

@@ -1,5 +1,29 @@
 const experience = [
 
+    {
+
+    company: 'Quick Connect Wireless',
+    position: 'Junior Software Developer',
+    link: 'https://canary.tools/',
+    daterange: 'August 2020 - Present',
+    points: [
+      'Working on implementing new features on the Sendit Streaming Service',
+      'Technologies used include Vue JS, Django Rest Framework, PostgreSQL, AWS and Docker',
+    ],
+    },
+   
+   {
+
+    company: 'HWT Water Treatment',
+    position: 'Python Developer - Freelance',
+    link: 'https://hwt.co.za/',
+    daterange: 'June 2020 - Present',
+    points: [
+      'Implementing new Features on the Data Capturing application built with Python Flask and Jinja',
+      'Exposed to new Technologies like AWS and PostgreSQL',
+    ],
+    },
+
 
     {
 
@@ -8,7 +32,7 @@ const experience = [
     link: 'https://canary.tools/',
     daterange: 'December 2019 - Present',
     points: [
-      'Desinging a hardware component that allows two Raspberry Pi model 3B to share an SD Card',
+      'Designing a hardware component that allows two Raspberry Pi model 3B to share an SD Card',
       'Working on improving an open source project.',
     ],
     },
@@ -33,7 +57,7 @@ const experience = [
             daterange: 'June 2019 - July 2019',
             points: [
               'Worked on a real life project that will help improve the call centers productivity',
-              'Technologies used inclued Angular, Python Falcon and SQLAlchemy',
+              'Technologies used include Angular, Python Falcon and SQLAlchemy',
             ],
             },
             {
