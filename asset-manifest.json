@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.153b1429.chunk.css",
-    "main.js": "/mywebsite/static/js/main.d727fc46.chunk.js",
-    "main.js.map": "/mywebsite/static/js/main.d727fc46.chunk.js.map",
+    "main.css": "/mywebsite/static/css/main.3da09487.chunk.css",
+    "main.js": "/mywebsite/static/js/main.be53315c.chunk.js",
+    "main.js.map": "/mywebsite/static/js/main.be53315c.chunk.js.map",
     "runtime-main.js": "/mywebsite/static/js/runtime-main.4bb7b1d2.js",
     "runtime-main.js.map": "/mywebsite/static/js/runtime-main.4bb7b1d2.js.map",
     "static/css/2.1a739b2a.chunk.css": "/mywebsite/static/css/2.1a739b2a.chunk.css",
-    "static/js/2.0241e02e.chunk.js": "/mywebsite/static/js/2.0241e02e.chunk.js",
-    "static/js/2.0241e02e.chunk.js.map": "/mywebsite/static/js/2.0241e02e.chunk.js.map",
+    "static/js/2.6c791c0f.chunk.js": "/mywebsite/static/js/2.6c791c0f.chunk.js",
+    "static/js/2.6c791c0f.chunk.js.map": "/mywebsite/static/js/2.6c791c0f.chunk.js.map",
     "index.html": "/mywebsite/index.html",
-    "precache-manifest.8c9a74a619fb0bb54fc729e824272adb.js": "/mywebsite/precache-manifest.8c9a74a619fb0bb54fc729e824272adb.js",
+    "precache-manifest.9068a7fce8dc93d523f42822cb2903d2.js": "/mywebsite/precache-manifest.9068a7fce8dc93d523f42822cb2903d2.js",
     "service-worker.js": "/mywebsite/service-worker.js",
     "static/css/2.1a739b2a.chunk.css.map": "/mywebsite/static/css/2.1a739b2a.chunk.css.map",
-    "static/css/main.153b1429.chunk.css.map": "/mywebsite/static/css/main.153b1429.chunk.css.map",
+    "static/css/main.3da09487.chunk.css.map": "/mywebsite/static/css/main.3da09487.chunk.css.map",
     "static/media/Tawanda Muzanenhamo CV.pdf": "/mywebsite/static/media/Tawanda Muzanenhamo CV.ca61b605.pdf",
     "static/media/App.css": "/mywebsite/static/media/astronomy-1868560.91d57bec.jpg",
     "static/media/covid.jpg": "/mywebsite/static/media/covid.a0d91e06.jpg",
     "static/media/dnfLodge.PNG": "/mywebsite/static/media/dnfLodge.adaffb05.PNG",
     "static/media/font-awesome.min.css": "/mywebsite/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/image3.jpg": "/mywebsite/static/media/image3.5dc5dfbe.jpg",
     "static/media/jcac.jpg": "/mywebsite/static/media/jcac.5690d807.jpg",
     "static/media/latest.PNG": "/mywebsite/static/media/latest.9cf94617.PNG",
     "static/media/sonar.jpg": "/mywebsite/static/media/sonar.eff66a3a.jpg",
@@ -29,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.4bb7b1d2.js",
     "static/css/2.1a739b2a.chunk.css",
-    "static/js/2.0241e02e.chunk.js",
-    "static/css/main.153b1429.chunk.css",
-    "static/js/main.d727fc46.chunk.js"
+    "static/js/2.6c791c0f.chunk.js",
+    "static/css/main.3da09487.chunk.css",
+    "static/js/main.be53315c.chunk.js"
   ]
 }
