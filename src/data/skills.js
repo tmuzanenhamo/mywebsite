@@ -15,6 +15,21 @@ const skills = [
     category: ['Frontend'],
   },
   {
+    title: 'PHP',
+    compentency: 4,
+    category: ['Backend', 'Languages'],
+  },
+  {
+    title: 'Laravel',
+    compentency: 4,
+    category: ['Backend'],
+  },
+  {
+    title: 'SCSS',
+    compentency: 4,
+    category: ['Frontend'],
+  },
+  {
     title: 'Bash',
     compentency: 3,
     category: ['Tools', 'Languages'],

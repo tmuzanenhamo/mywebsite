@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import image3 from '../Images/image3.jpg';
 import '../App.css';
 import ReactGA from 'react-ga';
 import {Link} from 'react-router-dom';
@@ -19,14 +18,11 @@ const validateText = (text) => {
 
 
 const messages = [
-  'Telecommunications',
-  'Software Development ',
-  'Data Science',
+  'Fullstack Software Engineering ',
+  'Cloud Computing',
+  'Systems Design',
   'Internet of Things',
   'Embedded Engineering', 
-  'Electrical Engineering',
-  'Electronics Engineering',
-  'Web Development',
 
 ];
 const useInterval = (callback, delay) => {
@@ -80,7 +76,7 @@ function Header() {
       <div className="centered">
         <div className='new-header'>
         <h1 className = 'catchy-tag'>Aim for the STARS</h1>
-        <p className ='header-p'>Hello and welcome to my ePortfolio. My name is Tawanda Muzanenhamo, i am a final year Elctrical and Computer Engineering student at the University of Cape Town</p>
+        <p className ='header-p'>Hello and welcome to my ePortfolio. My name is Tawanda Muzanenhamo, i am a an Electrical and Computer Engineer turned Fullstack Software Engineer and Cloud Computing Enthusiast.</p>
         <div
           className="inline-container"
           style={validateText(message) ? {} : { color: 'white' }}
