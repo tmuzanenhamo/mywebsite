@@ -19,7 +19,7 @@ const  EDUCATION = [
         "school": "University of Cape Town",
         "degree": "Electrical and Computer Engineering",
         "desc": "Electrical and Computer Engineering is a versatile degree, combining aspects of Electrical Engineering,Computer Engineering and Computer Science. I have found the curriculum very stimulating, and have enjoyed expanding my knowledge in a wide range of topics. I have been exposed to fields such as,Electronics Design, Image Processing, Signal Processing, Embedded Engineering, Professional Communication and New Venture Planning, to name a few. My focus in my final year thesis project is predominantly on machine learning applications in 5G and Wireless Networks.",
-        "year": "2016 - Present",
+        "year": "2016 - 2020",
         "link": "https://www.uct.ac.za/",
         'grade': 'GPA',
         'score': '64.95'
