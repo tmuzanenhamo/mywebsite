@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import '../../App.css';
 import contact from '../../data/contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import pdf from "../../data/Tawanda Muzanenhamo CV.pdf"
+import pdf from "../../data/Tawanda Muzanenhamo Resume.pdf"
 
 
 const validateText=(text) => {
@@ -97,7 +97,7 @@ function Education() {
           onMouseEnter={() => setIsActive(false)}
           onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
         >
-        <button id="buttons" onClick={onResumeClick} ><i class="fa fa-download" aria-hidden="true"></i>{' '}Download Resume</button>
+        <button id="resume" onClick={onResumeClick} ><i class="fa fa-download" aria-hidden="true"></i>{' '}Download Resume</button>
         <br/>
         <a href={validateText(message) ? `mailto:${message}@tmuzanenhamo14@gmail.com` : ''}>
               <span>{message}</span>

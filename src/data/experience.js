@@ -29,7 +29,7 @@ const experience = [
     company: "HWT Water Treatment",
     position: "Python Developer - Freelance",
     link: "https://hwt.co.za/",
-    daterange: "June 2020 - Present",
+    daterange: "June 2020 - February 2021",
     points: [
       "Implementing new Features on the Data Capturing application built with Python Flask and Jinja",
       "Exposed to new Technologies like AWS and PostgreSQL",
