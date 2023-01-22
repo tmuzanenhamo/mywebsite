@@ -64,7 +64,7 @@ const experience = [
     link: "https://optinum.co.za/",
     daterange: "June 2019 - July 2019",
     points: [
-      "Worked on a real life project that will help improve the call centers productivity",
+      "Worked on a real life project that will help improve the call centers productivity.",
       "Technologies used include Angular, Python Falcon and SQLAlchemy",
     ],
   },
