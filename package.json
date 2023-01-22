@@ -15,7 +15,7 @@
     "buttercms": "^1.2.1",
     "dayjs": "^1.8.17",
     "emailjs-com": "^2.4.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.0",
     "font-awesome": "^4.7.0",
     "gatsby": "^2.32.13",
